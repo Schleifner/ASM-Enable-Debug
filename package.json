@@ -4,6 +4,10 @@
   "description": "enable debug point of assembly (not include debug implement",
   "version": "0.0.1",
   "publisher": "enable-asm-debug",
+  "repository": {
+    "type": "git",
+    "url": "https://atc.bmwgroup.net/bitbucket/scm/cdcdev/asm-enable-debug.git"
+  },
   "engines": {
     "vscode": "^1.54.0"
   },
@@ -22,6 +26,8 @@
     ]
   },
   "scripts": {
+    "build": "npm run package && npm run vsce:package",
+    "vsce:package": "vsce package",
     "vscode:prepublish": "npm run package",
     "compile": "webpack",
     "watch": "webpack --watch",
@@ -44,6 +50,7 @@
     "mocha": "^8.4.0",
     "ts-loader": "^9.2.2",
     "typescript": "^4.3.2",
+    "vsce": "^1.96.1",
     "vscode-test": "^1.5.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
