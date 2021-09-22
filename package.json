@@ -2,8 +2,8 @@
   "name": "asm-enable-debug",
   "displayName": "asm-enable-debug",
   "description": "enable debug point of assembly (not include debug implement",
-  "version": "0.0.1",
-  "publisher": "enable-asm-debug",
+  "version": "0.0.2",
+  "publisher": "BMW-CDC-Team",
   "repository": {
     "type": "git",
     "url": "https://atc.bmwgroup.net/bitbucket/scm/cdcdev/asm-enable-debug.git"
@@ -14,19 +14,19 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:asm-enable-debug.helloWorld"
-  ],
+  "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
     "breakpoints": [
       {
         "language": "asm-intel-x86-generic"
+      },
+      {
+        "language": "arm"
       }
     ]
   },
   "scripts": {
-    "build": "npm run package && npm run vsce:package",
     "vsce:package": "vsce package",
     "vscode:prepublish": "npm run package",
     "compile": "webpack",

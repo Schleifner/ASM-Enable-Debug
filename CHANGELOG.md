@@ -6,4 +6,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
-- Initial release
+## [0.0.1] - 2021-09-18
+support x86-assembly
+
+## [0.0.2] - 2021-09-22
+support arm-assembly
