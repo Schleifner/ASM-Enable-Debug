@@ -2,7 +2,7 @@
   "name": "asm-enable-debug",
   "displayName": "asm-enable-debug",
   "description": "enable debug point of assembly (not include debug implement",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "BMW-CDC-Team",
   "repository": {
     "type": "git",
